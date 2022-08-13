@@ -58,6 +58,7 @@ export default function App() {
     })
       .then(response => response.json())
       .then(response => {
+        console.log(response.outputs[0]);
         if (response) {
           fetch('https://thawing-citadel-36118.herokuapp.com/image', {
             method: 'put',
